@@ -20,7 +20,7 @@ namespace ButtonDemos.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
             Agent.Instance.Start();
-            Agent.Instance.IdentifyUser("igor.simoes@dynatrace.com");
+            Agent.Instance.IdentifyUser("John Doe");
         }
     }
 }
