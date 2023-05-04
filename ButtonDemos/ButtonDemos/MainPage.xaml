@@ -9,6 +9,10 @@
                     JustifyContent="SpaceEvenly"
                     AlignItems="Center">
 
+            <Button Text="Identify User"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:UserIdentifyPage}" />
+            
             <Button Text="Basic Button Click"
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type local:BasicButtonClickPage}" />

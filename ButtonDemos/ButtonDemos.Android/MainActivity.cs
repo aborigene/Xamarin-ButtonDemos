@@ -18,9 +18,12 @@ namespace ButtonDemos.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            Xamarin.Forms.DependencyService.RegisterSingleton<IDynatrace>(Agent.Instance);
+
             LoadApplication(new App());
+
             Agent.Instance.Start();
-            Agent.Instance.IdentifyUser("John Doe");
         }
     }
 }

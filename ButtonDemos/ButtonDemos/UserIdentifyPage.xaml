@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ButtonDemos.UserIdentifyPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker SelectedIndex="1" Title="Select a username..." SelectedIndexChanged="Picker_SelectedIndexChanged" x:Name="userPicker">
+                <Picker.Items>
+                    <x:String>Jonh Doe</x:String>
+                    <x:String>Harvey Heavyweather</x:String>
+                    <x:String>Monica Clearwater</x:String>
+                    <x:String>Joan D'Arc</x:String>
+                    <x:String>Ellen Silva</x:String>
+                    <x:String>July First</x:String>
+                    <x:String>Bob McIron</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!--<Label Text="Selected user: " ></Label> -->
+            <Button Text="Use selected user..." Clicked="Button_Clicked" />
+    
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
